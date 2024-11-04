@@ -1,5 +1,3 @@
-// contexts/ForestContext.tsx
-
 import React, {
   createContext,
   useContext,

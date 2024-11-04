@@ -1,4 +1,3 @@
-// context/SolanaContractContext.tsx
 import React, {
   createContext,
   useCallback,

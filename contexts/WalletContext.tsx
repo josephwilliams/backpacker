@@ -1,4 +1,3 @@
-// context/WalletContext.tsx
 import React, { createContext, useContext, useEffect, useState } from "react";
 import { BackpackConnector } from "../lib/BackpackConnector";
 import { PublicKey } from "@solana/web3.js";

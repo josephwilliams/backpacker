@@ -1,6 +1,7 @@
 import React from "react";
 import { useWallet } from "../contexts/WalletContext";
 // import Link from "next/link";
+import { DynamicWidget } from "@dynamic-labs/sdk-react-core";
 
 function shortenSolanaAddress(address, startLength = 4, endLength = 4) {
   // Ensure the address is valid and long enough to truncate
@@ -47,12 +48,15 @@ const WalletButton: React.FC = () => {
           </button>
         </div>
       ) : (
-        <button
-          onClick={connectWallet}
-          className="shadow-md bg-[#93a093] text-white rounded-md p-3 mt-3 text-sm"
-        >
-          Connect to Backpack
-        </button>
+        // <button
+        //   onClick={connectWallet}
+        //   className="shadow-md bg-[#93a093] text-white rounded-md p-3 mt-3 text-sm"
+        // >
+        //   Connect to Backpack
+        // </button>
+        <div className="mt-3">
+          <DynamicWidget />
+        </div>
       )}
       {/* <Link href="https://github.com/josephwilliams/backpacker" target="_blank">
         <div className="flex gap-3 mt-3 shadow-md bg-[#93a093] text-white rounded-md p-3">
